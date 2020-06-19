@@ -10,7 +10,7 @@ import './App.css';
 import eth from './web3';
 import Main from './Main'
 import Dai from './Dai'
-import daiLogo from './dai-pixel.png'
+import mcrLogo from './MCR.png'
 
 const ethers = require('ethers')
 const utils = ethers.utils
@@ -438,10 +438,10 @@ class App extends Component {
     )
 
     return mkrAnnualBurn
-  }
+  };
 
   render() {
-    const t = this.props.t
+    const t = this.props.t;
     if (this.isLoaded()) {
       return (
         <Router basename="/">
@@ -450,29 +450,27 @@ class App extends Component {
             { /* eslint-disable-next-line */ }
             {t('daistats.block')}: <strong>{this.state.blockNumber}</strong>. {this.state.paused ? `${t('daistats.pause')}.` : `${t('daistats.auto_updating')}.`} <a onClick={this.togglePause}>{this.state.paused ? t('daistats.restart') : t('daistats.pause')}</a>
             <br />
-            TUSD and USBC-B are here! <a href="https://twitter.com/nanexcool" target="_blank" rel="noopener noreferrer">{t('daistats.say_hi')}</a>
+            MCR home page! <a href="https://monolith.money/" target="_blank" rel="noopener noreferrer">monolith</a>
             <br />
             <div className="buttons is-centered">
               <button className="button is-small is-rounded" onClick={() => this.props.toggle('en')}>English</button>
-              <button className="button is-small is-rounded" onClick={() => this.props.toggle('es')}>Español</button>
-              <button className="button is-small is-rounded" onClick={() => this.props.toggle('fr')}>Français</button>
-              <button className="button is-small is-rounded" onClick={() => this.props.toggle('it')}>Italiano</button>
-              <button className="button is-small is-rounded" onClick={() => this.props.toggle('de')}>Deutsch</button>
-              <button className="button is-small is-rounded" onClick={() => this.props.toggle('id')}>Bahasa Indonesia</button>
-              <button className="button is-small is-rounded" onClick={() => this.props.toggle('zh-TW')}>繁體中文</button>
+              {/*<button className="button is-small is-rounded" onClick={() => this.props.toggle('es')}>Español</button>*/}
+              {/*<button className="button is-small is-rounded" onClick={() => this.props.toggle('fr')}>Français</button>*/}
+              {/*<button className="button is-small is-rounded" onClick={() => this.props.toggle('it')}>Italiano</button>*/}
+              {/*<button className="button is-small is-rounded" onClick={() => this.props.toggle('de')}>Deutsch</button>*/}
+              {/*<button className="button is-small is-rounded" onClick={() => this.props.toggle('id')}>Bahasa Indonesia</button>*/}
+              {/*<button className="button is-small is-rounded" onClick={() => this.props.toggle('zh-TW')}>繁體中文</button>*/}
               <button className="button is-small is-rounded" onClick={() => this.props.toggle('ru')}>Русский</button>
-              <button className="button is-small is-rounded" onClick={() => this.props.toggle('ga')}>Gaeilge</button>
-              <button className="button is-small is-rounded" onClick={() => this.props.toggle('tr')}>Türkçe</button>
-              <button className="button is-small is-rounded" onClick={() => this.props.toggle('pl')}>Polski</button>
-              <button className="button is-small is-rounded" onClick={() => this.props.toggle('ro')}>Română</button>
-              <button className="button is-small is-rounded" onClick={() => this.props.toggle('fa')}>فارسی</button>
-              <button className="button is-small is-rounded" onClick={() => this.props.toggle('uk')}>Українська</button>
-              <button className="button is-small is-rounded" onClick={() => this.props.toggle('kr')}>한국어</button>
+              {/*<button className="button is-small is-rounded" onClick={() => this.props.toggle('ga')}>Gaeilge</button>*/}
+              {/*<button className="button is-small is-rounded" onClick={() => this.props.toggle('tr')}>Türkçe</button>*/}
+              {/*<button className="button is-small is-rounded" onClick={() => this.props.toggle('pl')}>Polski</button>*/}
+              {/*<button className="button is-small is-rounded" onClick={() => this.props.toggle('ro')}>Română</button>*/}
+              {/*<button className="button is-small is-rounded" onClick={() => this.props.toggle('fa')}>فارسی</button>*/}
               {/* <button className="button is-small is-rounded" onClick={() => this.props.toggle('dw')}>Daiwanese 🤪</button> */}
             </div>
           </div>
           <Switch>
-            <Route path="/dai">
+            <Route path="/mcr">
               <Dai {...this.state} {...add} />
             </Route>
             <Route path="/">
@@ -486,7 +484,7 @@ class App extends Component {
         <section className="section">
          <div className="container has-text-centered">
            <figure className="image is-128x128 container">
-             <img src={daiLogo} alt="Dai Logo" />
+             <img src={mcrLogo} alt="MCR Logo" />
            </figure>
            <br />
            <progress className="progress is-small is-primary" max="100">15%</progress>
@@ -504,7 +502,7 @@ const NavBar = () => {
       <div className="container">
       <div className="navbar-brand">
         <Link className="navbar-item" to="/">Home</Link>
-        <Link className="navbar-item" to="/dai">What's the total supply of Dai?</Link>
+        <Link className="navbar-item" to="/mcr">What's the total supply of MCR?</Link>
       </div>
       </div>
     </nav>

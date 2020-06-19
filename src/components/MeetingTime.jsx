@@ -2,17 +2,17 @@ import React from 'react';
 
 export { MeetingTime as default };
 
-var now = new Date()
+var now = new Date();
 
 // Community Meeting - 5:00 PM UTC Tuesdays
-var communityMeeting = now.getDay() === 2 && now.getUTCHours() === 17
-var communityTitle = "MakerDAO Community Meeting"
-var communityUrl = "https://zoom.us/j/697074715"
+var communityMeeting = now.getDay() === 2 && now.getUTCHours() === 17;
+var communityTitle = "MakerDAO Community Meeting";
+var communityUrl = "https://zoom.us/j/697074715";
 
 // Governance/Risk Meeting - 5:00 PM UTC Thursdays
-var riskMeeting = now.getDay() === 4 && now.getUTCHours() === 17
-var riskTitle = "MakerDAO Governance and Risk Meeting"
-var riskUrl = "https://zoom.us/j/697074715"
+var riskMeeting = now.getDay() === 4 && now.getUTCHours() === 17;
+var riskTitle = "MakerDAO Governance and Risk Meeting";
+var riskUrl = "https://zoom.us/j/697074715";
 
 function MeetingNote(props) {
   if (props.show) {
