@@ -1,8 +1,8 @@
 {
-  "name": "daistats",
+  "name": "mcr-stats",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://daistats.com",
+  "homepage": "http://mcrstats.com/",
   "dependencies": {
     "defi18n": "git+https://github.com/captain13128/defi18n.git",
     "ethers": "^5.0.2",
