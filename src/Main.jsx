@@ -388,22 +388,22 @@ const Main = (props) => {
             </div>
           </div>
           <div className="columns">
-            <div className="column">
-              <div className="box has-text-centered">
-                <h3 className="title" >{formatAmount.format(Math.min(props.vow_dai, props.sysDebt))}</h3>
-                <p className="title subtitle is-size-4">{t('daistats.debt_available_heal')}</p>
-                <p className="subtitle is-size-6">{t('daistats.debt_buffer')}: {formatAmount.format(props.debtSize)}</p>
-                {(props.networkId === 1) && false && <HealButton sysDebtRaw={props.vow_dai < props.sysDebt ? props.vowDaiRaw : props.sysDebtRaw}/>}
-              </div>
-            </div>
-            <div className="column">
-              <div className="box has-text-centered">
-                <h3 className="title" title={props.sysSurplus}>{formatAmount.format(props.sysSurplus)}</h3>
-                <p className="title subtitle is-size-4">{t('daistats.system_surplus')}</p>
-                <p className="subtitle is-size-6">{t('daistats.surplus_buffer')}: {formatAmount.format(props.surplusBuffer)} / {t('daistats.lot')}: {formatAmount.format(props.surplusBump)}</p>
-                {(props.networkId === 1) && false && <FlapButton sysDebt={props.sysDebt} sysSurplus={props.sysSurplus} surplusBump={props.surplusBump} surplusBuffer={props.surplusBuffer}/>}
-              </div>
-            </div>
+            {/*<div className="column">*/}
+            {/*  <div className="box has-text-centered">*/}
+            {/*    <h3 className="title" >{formatAmount.format(Math.min(props.vow_dai, props.sysDebt))}</h3>*/}
+            {/*    <p className="title subtitle is-size-4">{t('daistats.debt_available_heal')}</p>*/}
+            {/*    <p className="subtitle is-size-6">{t('daistats.debt_buffer')}: {formatAmount.format(props.debtSize)}</p>*/}
+            {/*    {(props.networkId === 1) && false && <HealButton sysDebtRaw={props.vow_dai < props.sysDebt ? props.vowDaiRaw : props.sysDebtRaw}/>}*/}
+            {/*  </div>*/}
+            {/*</div>*/}
+            {/*<div className="column">*/}
+            {/*  <div className="box has-text-centered">*/}
+            {/*    <h3 className="title" title={props.sysSurplus}>{formatAmount.format(props.sysSurplus)}</h3>*/}
+            {/*    <p className="title subtitle is-size-4">{t('daistats.system_surplus')}</p>*/}
+            {/*    <p className="subtitle is-size-6">{t('daistats.surplus_buffer')}: {formatAmount.format(props.surplusBuffer)} / {t('daistats.lot')}: {formatAmount.format(props.surplusBump)}</p>*/}
+            {/*    {(props.networkId === 1) && false && <FlapButton sysDebt={props.sysDebt} sysSurplus={props.sysSurplus} surplusBump={props.surplusBump} surplusBuffer={props.surplusBuffer}/>}*/}
+            {/*  </div>*/}
+            {/*</div>*/}
             <div className="column">
               <div className="box has-text-centered">
                 <h3 className="title" title={props.cdps}>{props.cdps}</h3>
@@ -511,14 +511,14 @@ const Main = (props) => {
             {/*    </a>*/}
             {/*  </div>*/}
             {/*</div>*/}
-            <div className="column">
-              <div className="box has-text-centered">
-                <a href={`https://etherscan.io/token/${props.WBTC}`} target="_blank" rel="noopener noreferrer">
-                  <h3 className="title"><i className="fal fa-file-code"></i> WBTC</h3>
-                  <p className="subtitle is-size-7">{props.WBTC}</p>
-                </a>
-              </div>
-            </div>
+            {/*<div className="column">*/}
+            {/*  <div className="box has-text-centered">*/}
+            {/*    <a href={`https://etherscan.io/token/${props.WBTC}`} target="_blank" rel="noopener noreferrer">*/}
+            {/*      <h3 className="title"><i className="fal fa-file-code"></i> WBTC</h3>*/}
+            {/*      <p className="subtitle is-size-7">{props.WBTC}</p>*/}
+            {/*    </a>*/}
+            {/*  </div>*/}
+            {/*</div>*/}
             {/*<div className="column">*/}
             {/*  <div className="box has-text-centered">*/}
             {/*    <a href={`https://etherscan.io/token/${props.TUSD}`} target="_blank" rel="noopener noreferrer">*/}
