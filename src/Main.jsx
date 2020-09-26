@@ -361,12 +361,12 @@ const Main = (props) => {
                 <p className="subtitle is-size-6">{t('daistats.next_osm_price')}: ₽{formatCurrency.format(props.wbtcPriceNxt)}</p>
               </div>
             </div>
-            <div className="column">
-              <div className="box has-text-centered">
-                <h3 className="title" title={props.mkrPrice}>₽{formatCurrency.format(props.mkrPrice)}</h3>
-                <p className="title subtitle is-size-4">MDT Price</p>
-              </div>
-            </div>
+            {/*<div className="column">*/}
+            {/*  <div className="box has-text-centered">*/}
+            {/*    <h3 className="title" title={props.mkrPrice}>₽{formatCurrency.format(props.mkrPrice)}</h3>*/}
+            {/*    <p className="title subtitle is-size-4">MDT Price</p>*/}
+            {/*  </div>*/}
+            {/*</div>*/}
 
           </div>
           <div className="columns">
@@ -457,35 +457,35 @@ const Main = (props) => {
                 <p className="subtitle is-size-4">{t('daistats.token_supply', {token:'MDT'})}</p>
               </div>
             </div>
-            <div className="column">
-              <div className="box has-text-centered">
-                <h3 className="title" title={props.mkrAnnualBurn}>{formatAmount.format(props.mkrAnnualBurn)}</h3>
-                <p className="title subtitle is-size-4">{t('daistats.annual_mkr_burn_rate')}</p>
-                <p className="subtitle is-size-6">₽{formatAmount.format(props.mkrAnnualBurn * props.mkrPrice)} RUB</p>
-              </div>
-            </div>
+            {/*<div className="column">*/}
+            {/*  <div className="box has-text-centered">*/}
+            {/*    <h3 className="title" title={props.mkrAnnualBurn}>{formatAmount.format(props.mkrAnnualBurn)}</h3>*/}
+            {/*    <p className="title subtitle is-size-4">{t('daistats.annual_mkr_burn_rate')}</p>*/}
+            {/*    <p className="subtitle is-size-6">₽{formatAmount.format(props.mkrAnnualBurn * props.mkrPrice)} RUB</p>*/}
+            {/*  </div>*/}
+            {/*</div>*/}
           </div>
-          <div className="columns">
-            <div className="column">
-              <div className="box has-text-centered">
-                <h3 className="title" title={props.savingsDai}>{formatAmount.format(props.chaiSupply)}</h3>
-                <p className="title subtitle is-size-4">{t('daistats.token_supply', {token:'Chai'})} <span role="img" aria-label="chai">🍵</span></p>
-                <p className="subtitle is-size-6">({t('daistats.dai_brewing')}: {formatAmount.format(props.daiBrewing)})</p>
-              </div>
-            </div>
-            <div className="column">
-              <div className="box has-text-centered">
-                <h3 className="title" title={props.oasisDEXDai}>{formatAmount.format(props.oasisDexDai)}</h3>
-                <p className="subtitle is-size-4">{t('daistats.token_in_dex', {token:'MCR',dex:'trade.monolith.money'})}</p>
-              </div>
-            </div>
-            <div className="column">
-              <div className="box has-text-centered">
-                <h3 className="title" title={props.uniswapDai}>{formatAmount.format(props.uniswapDai)}</h3>
-                <p className="subtitle is-size-4">{t('daistats.token_in_dex', {token:'MCR',dex:'Uniswap'})}</p>
-              </div>
-            </div>
-          </div>
+          {/*<div className="columns">*/}
+          {/*  <div className="column">*/}
+          {/*    <div className="box has-text-centered">*/}
+          {/*      <h3 className="title" title={props.savingsDai}>{formatAmount.format(props.chaiSupply)}</h3>*/}
+          {/*      <p className="title subtitle is-size-4">{t('daistats.token_supply', {token:'Chai'})} <span role="img" aria-label="chai">🍵</span></p>*/}
+          {/*      <p className="subtitle is-size-6">({t('daistats.dai_brewing')}: {formatAmount.format(props.daiBrewing)})</p>*/}
+          {/*    </div>*/}
+          {/*  </div>*/}
+          {/*  <div className="column">*/}
+          {/*    <div className="box has-text-centered">*/}
+          {/*      <h3 className="title" title={props.oasisDEXDai}>{formatAmount.format(props.oasisDexDai)}</h3>*/}
+          {/*      <p className="subtitle is-size-4">{t('daistats.token_in_dex', {token:'MCR',dex:'trade.monolith.money'})}</p>*/}
+          {/*    </div>*/}
+          {/*  </div>*/}
+          {/*  <div className="column">*/}
+          {/*    <div className="box has-text-centered">*/}
+          {/*      <h3 className="title" title={props.uniswapDai}>{formatAmount.format(props.uniswapDai)}</h3>*/}
+          {/*      <p className="subtitle is-size-4">{t('daistats.token_in_dex', {token:'MCR',dex:'Uniswap'})}</p>*/}
+          {/*    </div>*/}
+          {/*  </div>*/}
+          {/*</div>*/}
           <div className="columns">
             <div className="column">
               <div className="box has-text-centered">

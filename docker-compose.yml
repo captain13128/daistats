@@ -1,0 +1,8 @@
+version: '3'
+services:
+  web:
+    build: .
+    container_name: mcr-stats
+    ports:
+    - "3003:80"
+    restart: always
